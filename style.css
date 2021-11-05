@@ -34,7 +34,7 @@ main {
 
 #intro-txt {
   display: flex; /*automaticly desplayes in row - horisontaly*/
-  flex: 0 1 40vw;/*flex growth flex shrink and 0 and 1 are dafault. It sizes the item based on its width / height properties. */
+  flex: 0 1 100vw;
   height: 50vh;
   justify-content: center; /*align horisontaly*/
   align-items: center; /*align verticaly*/
@@ -50,7 +50,7 @@ main {
   background-repeat: no-repeat;
   size: cover;
   height: 50vh;
-  flex: 0 1 60vw;
+  flex: 0 1 100vw;
   margin: 0;
 }
 
@@ -97,11 +97,13 @@ footer {
   }
 
   #intro-txt {
+    flex: 0 1 40vw;/*flex growth flex shrink and 0 and 1 are dafault. It sizes the item based on its width / height properties. */
     height: 100vh; 
   }
 
   #intro-img {
     height: 100vh;
+    flex: 0 1 60vw;
   }
 }
 
