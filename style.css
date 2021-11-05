@@ -1,25 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed'); */
 
 body {
-  /* font-family: 'Roboto Condensed', sans-serif; */
   margin: 0;
-  background: #eee;
+  background: rgb(238, 238, 238);
   height: auto;
 }
 
 h1 {
-  font-weight: 400;
-  /* font-size: 2.5rem; */
+  font-weight: 450;
+  padding-top: 20px;
   text-transform: uppercase;
-  /* margin: 0; */
 }
 
 h5 {
-  font-weight: 400;
-  /* font-size: 1.2rem; */
-  text-transform: capitalize;
-  /* margin: 0; */
-  padding-top: 7px;
+  font-weight: 450;
+  padding-top: 20px;
 }
 
 img {
@@ -30,68 +24,58 @@ img {
 main {
   max-width: 900px;
   margin: auto;
-  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
-    -30px 0px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+    -30px 0px 40px rgba(0, 0, 0, 0.2);
 }
 
-#landing {
+#intro {
   background: #fff;
 }
 
-#landing-text {
-  display: flex;
-  flex: 40vw;
+#intro-txt {
+  display: flex; /*automaticly desplayes in row - horisontaly*/
+  flex: 0 1 40vw;/*flex growth flex shrink and 0 and 1 are dafault. It sizes the item based on its width / height properties. */
   height: 50vh;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /*align horisontaly*/
+  align-items: center; /*align verticaly*/
   text-align: center;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-#landing-text h2 {
-  color: #888;
-}
-
-#landing-image {
+#intro-img {
   background: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/04/05/16/worlds-best-gardens-4.jpg?width=1368);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  size: cover;
   height: 50vh;
   flex: 0 1 60vw;
   margin: 0;
 }
 
 .btn {
-  /* padding: 0.5rem 2rem; */
-  border: 1px #ccc solid;
-  display: inline-block;
-  margin: 2rem 0 0;
+  padding: 10px 20px;
+  border: 1px rgb(177, 176, 176) solid;
+  /* display: inline-block; */
+  margin: 30px;
   border-radius: 50px;
   text-decoration: none;
-  color: #333;
-  transition: background 500ms ease;
+  transition: background 0.7s ease;
 }
 
 .btn:hover {
-  background: #f4f4f4;
+  background: #eeeded;
+  border: 1px rgb(177, 176, 176) solid;
 }
 
 #header {
-  padding: 1.5rem;
+  padding: 25px;
   text-align: center;
   background:rgb(32, 32, 32);
   color: #fff;
 }
 
-/* #header h2 {
-  /* border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff; 
-  display: inline-block;
-  padding-right: 20px;
-  padding-left: 20px;
-} */
 
 .caption {
   padding: 10px;
@@ -105,30 +89,20 @@ footer {
   color: #333;
 }
 
-/* footer h3 {
-  font-size: 3rem;
-  margin-bottom: 0;
-} */
-
 /* Screen Sizes 500px and Up */
 @media (min-width: 500px) {
-  #landing {
+  #intro {
     display: flex;
     height: 100%;
   }
 
-  #landing-text {
-    height: 100vh;
+  #intro-txt {
+    height: 100vh; 
   }
 
-  #landing-image {
+  #intro-img {
     height: 100vh;
   }
 }
 
-/* Screen Sizes 700px and Up */
-@media (min-width: 700px) {
-  .btn {
-    padding: 1rem 3rem;
-  }
-}
+
